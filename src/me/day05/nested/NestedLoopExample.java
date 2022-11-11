@@ -23,9 +23,6 @@ public class NestedLoopExample {
         }
 
 
-
-
-
 //        // (1, 1), (2, 2), (3, 3) .... (9, 9)
 //        for (int i = 1; i < 10; i++) {
 //            for (int j = 1; j < 10; j++) {
