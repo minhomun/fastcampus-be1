@@ -17,6 +17,7 @@ public class LoopingExample {
 //        }
 //        average = (double) sum / NUM;
 //        System.out.println("average = " + average);
+//        System.out.println();
 
         // 사용자에게 입력받은 5개의 정수 중 가장 최솟값 / 최댓값
         int min = Integer.MAX_VALUE;

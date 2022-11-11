@@ -2,7 +2,7 @@ package me.day05.breaks;
 
 import java.util.Scanner;
 
-public class BreakExample {
+public class BreakContinueExample {
     public static void main(String[] args) {
 //        while (true) {} (**)
 //        for(;;)

@@ -62,6 +62,7 @@ public class WhileExample {
         }
         System.out.println("sum = " + sum); // 65
 
+        //////////////////////////////////////////////////
 
         i = 1;
         while (i <= 10) {
