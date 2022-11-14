@@ -1,13 +1,15 @@
 package me.day06.function;
 
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class MainFunctionExample { // 클래스 로더
     /*
-    * 함수: 공통적인 기능을 분리/모듈화해서 작성하기 위함
-    * 메서드: 객체지향에서 함수를 메서드 (함수의 작은 범위)
-    * */
+     * 함수: 공통적인 기능을 분리/모듈화해서 작성하기 위함
+     * 메서드: 객체지향에서 함수를 메서드 (함수의 작은 범위)
+     * */
 
     public static void main(String[] args) { // 메인함수 호출
         int res1 = sigma(1);
@@ -29,7 +31,8 @@ public class MainFunctionExample { // 클래스 로더
 
         x = 1;
         y = 2;
-        int[] vars = new int[] {x, y}; // 배열의 이름에는 주소값을 가지고 있음
+        int[] vars = new int[]{x, y}; // 배열의 이름에는 주소값을 가지고 있음
+        System.out.println("vars = " + vars);
         System.out.printf("swap 함수 외부 (전): [%d %d]\n", vars[0], vars[1]);
         swap(vars); // 200
         System.out.printf("swap 함수 외부 (후): [%d %d]\n", vars[0], vars[1]);
@@ -56,12 +59,14 @@ public class MainFunctionExample { // 클래스 로더
         y = temp;
         System.out.printf("swap 함수 내부 (후): [%d %d]\n", x, y);
 
-        return new int[] {x, y};
+        return new int[]{x, y};
     }
+
 
     // call by reference (참조자 C++) (X)
     // call by value (address)
     public static void swap(int[] args) { // args = 200 (address value), arg[0]: 1, arg[1]: 2 => swap => arg[0]: 2, arg[1]: 1
+        System.out.println("args = " + args);
         System.out.printf("swap 함수 내부 (전): [%d %d]\n", args[0], args[1]);
         int temp; // tmp
 
